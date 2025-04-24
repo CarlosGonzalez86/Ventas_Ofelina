@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f4f4f4;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+header nav a:hover {
+  color: #007BFF;
+}
+
+.modo-oscuro-boton {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Contenedor de productos */
+.contenedor-productos {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Producto */
+.producto-venta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #e290c0;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.producto-venta img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.producto-venta h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.producto-venta .precio {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.producto-venta .precio-tachado {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.producto-venta .precio-venta {
+  font-weight: bold;
+  color: #000;
+}
+
+.producto-venta .boton-comprar {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #bd7d7d;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.producto-venta:hover {
+  box-shadow: 0 0 10px #1a1818;
+}
+
+/* Logo */
+.logo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: url(Imagenes/bg.jpg);
+  padding: 40px;
+}
+
+/* Modo oscuro */
+body.modo-oscuro {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.modo-oscuro header {
+  background-color: #1e1e1e;
+}
+
+body.modo-oscuro .producto-venta {
+  border-color: #333;
+}
+
+body.modo-oscuro footer {
+  background-color: #1e1e1e;
+}
